@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:task_management/pages/signup.dart';
+import 'package:task_management/server/authservice.dart';
+
 import 'SecondScreen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -8,8 +11,21 @@ class LoginScreen extends StatefulWidget {
   State<LoginScreen> createState() => _LoginScreenState();
 }
 
+
 class _LoginScreenState extends State<LoginScreen> {
-  @override
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  final AuthService authService = AuthService();
+
+  void loginUser() {
+    authService.signInUser(
+      context: context,
+      email: emailController.text,
+      password: passwordController.text,
+    );
+  }
+
+
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
@@ -140,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => HomeScreen()));
+                                        builder: (context) => MyRegister()));
                               },
                               child: Container(
                                 width: 60,

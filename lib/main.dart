@@ -3,8 +3,10 @@ import 'package:sizer/sizer.dart';
 import 'package:task_management/core/res/color.dart';
 import 'package:task_management/core/routes/routes.dart';
 
+
 void main() {
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
