@@ -182,7 +182,7 @@ class _BoardingWidget extends StatelessWidget {
             height: 30,
           ),
           Text(
-            "Manage your Task",
+            "Manage your Health",
             style: TextStyle(
               color: Colors.grey[800],
               fontSize: 32,
@@ -193,7 +193,7 @@ class _BoardingWidget extends StatelessWidget {
             height: 10,
           ),
           Text(
-            "Organize all your to-do's in lists and \n projects. Color tag to set them your priority and categories.",
+            "Access personalized meditations, journals, and affirmations.",
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.grey[500],

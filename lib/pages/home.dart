@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_management/pages/signup.dart';
-import 'package:task_management/server/authservice.dart';
+//import 'package:task_management/server/authservice.dart';
 
 import 'SecondScreen.dart';
 
@@ -15,15 +15,15 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
-  final AuthService authService = AuthService();
+  // final AuthService authService = AuthService();
 
-  void loginUser() {
-    authService.signInUser(
-      context: context,
-      email: emailController.text,
-      password: passwordController.text,
-    );
-  }
+  // void loginUser() {
+  //   authService.signInUser(
+  //     context: context,
+  //     email: emailController.text,
+  //     password: passwordController.text,
+  //   );
+  // }
 
 
   Widget build(BuildContext context) {

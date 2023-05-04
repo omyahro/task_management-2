@@ -1,15 +1,14 @@
-import 'dart:convert';
-
+/*import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_node_auth/models/user.dart';
 import 'package:flutter_node_auth/providers/user_provider.dart';
-import 'package:flutter_node_auth/screens/home_screen.dart';
-import 'package:flutter_node_auth/screens/signup_screen.dart';
-import 'package:flutter_node_auth/utils/constants.dart';
-import 'package:flutter_node_auth/utils/utils.dart';
+import 'package:task_management/pages/home.dart';
+import 'package:task_management/pages/signup.dart';
+import 'package:task_management/pages/const.dart';
+import 'package:task_management/server/utils.dart';
 import 'package:http/http.dart' as http;
-import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+//import 'package:provider/provider.dart';
+//import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
   void signUpUser({
@@ -136,3 +135,5 @@ class AuthService {
     );
   }
 }
+
+*/
